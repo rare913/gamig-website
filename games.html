@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(95deg, #1a1a2e, #16213e, #0f3460);
+            background-repeat: no-repeat;
+            color: white;
+            box-sizing: border-box;
+
+        }
+
+        .nav {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            font-family: "Brush Script MT", cursive;
+            padding: 40px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .logo {
+            display: flex;
+            padding-top: 5px;
+        }
+
+        .logo i {
+            font-size: 40px;
+            padding-right: 10px;
+            padding-top: 2px;
+            padding-left: 50px;
+
+        }
+
+        .logo a {
+            color: rgb(0, 255, 128);
+        }
+
+        .logo h1 {
+            padding-right: 750px;
+        }
+
+        .pages {
+            display: flex;
+        }
+
+        .pages h1 {
+            padding-right: 50px;
+            font-size: 20px;
+            padding-top: 15px;
+            transition: transform 0.3s ease 0s;
+
+        }
+
+        .pages a {
+            transition: transform 0.3s ease 0s;
+        }
+
+        .pages h1:hover {
+            color: aqua;
+            transform: translateY(-10px);
+
+        }
+
+        .pages :hover {
+            color: aqua;
+            transform: translateY(-10px);
+
+        }
+
+        .head2 {
+            margin-left: 200px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .mine {
+            display: flex;
+        }
+
+        .mine h1 {
+            padding-left: 31%;
+            text-transform: uppercase;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 70px;
+        }
+
+        .minecraft {
+            width: 450px;
+            height: 600px;
+            background-color: rgb(24, 97, 75);
+            margin-top: 100px;
+            border-radius: 15px;
+            transition: transform 0.3s ease 0s;
+            position: relative;
+
+        }
+
+        .minecraft:hover {
+            transform: translateY(-30px);
+            box-shadow: 2px 2px 2pc 2px rgb(15, 160, 92);
+        }
+
+        .mi1 img {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            padding-left: 150px;
+            padding-top: 50px;
+        }
+
+        .mi2 img {
+            padding-top: 220px;
+            width: 300px;
+            height: auto;
+            padding-left: 75px;
+        }
+
+        .mitext p {
+            position: absolute;
+            color: rgb(192, 192, 192);
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 25px;
+
+        }
+
+        .mitext button {
+            width: 150px;
+            height: 50px;
+            background-color: rgba(0, 255, 255, 0);
+            border: 3px solid rgb(14, 160, 165);
+            color: white;
+            font-size: large;
+            margin-top: 30px;
+            transition: transform 0.3s ease 0s;
+            border-radius: 10px;
+            font-weight: bolder;
+            font-family: "Brush Script MT", cursive;
+            margin-left: 150px;
+            margin-top: 250px;
+        }
+
+        .mitext button:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(to right, #00ccff, #04b9d1, #009cda);
+            color: black;
+            box-shadow: 1px 1px 1pc 1px #00aeda;
+        }
+
+        .freefire {
+            width: 450px;
+            height: 600px;
+            background-color: rgb(97, 24, 40);
+            margin-top: -600px;
+            border-radius: 15px;
+            transition: transform 0.3s ease 0s;
+            position: relative;
+            margin-left: 520px;
+
+        }
+
+        .freefire:hover {
+            transform: translateY(30px);
+            box-shadow: 2px 2px 2pc 2px rgb(160, 15, 51);
+        }
+
+        .ff1 img {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            padding-left: 150px;
+            padding-top: 50px;
+        }
+
+        .ff2 img {
+            padding-top: 200px;
+            width: 270px;
+            height: auto;
+            padding-left: 80px;
+        }
+
+        .fftext p {
+            position: absolute;
+            color: rgb(192, 192, 192);
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 25px;
+
+        }
+
+        .fftext button {
+            width: 150px;
+            height: 50px;
+            background-color: rgba(0, 255, 255, 0);
+            border: 3px solid rgb(14, 160, 165);
+            color: white;
+            font-size: large;
+            margin-top: 30px;
+            transition: transform 0.3s ease 0s;
+            border-radius: 10px;
+            font-weight: bolder;
+            font-family: "Brush Script MT", cursive;
+            margin-left: 150px;
+            margin-top: 250px;
+        }
+
+        .fftext button:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(to right, #00ccff, #04b9d1, #009cda);
+            color: black;
+            box-shadow: 1px 1px 1pc 1px #00aeda;
+        }
+
+        .amongus {
+            width: 450px;
+            height: 600px;
+            background-color: rgb(96, 97, 24);
+            margin-top: -600px;
+            margin-left: 1040px;
+            border-radius: 15px;
+            transition: transform 0.3s ease 0s;
+            position: relative;
+
+        }
+
+        .amongus:hover {
+            transform: translateY(-30px);
+            box-shadow: 2px 2px 2pc 2px rgb(145, 160, 15);
+        }
+
+        .us1 img {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            padding-left: 150px;
+            padding-top: 40px;
+        }
+
+        .us2 img {
+            padding-top: 200px;
+            width: 200px;
+            height: auto;
+            padding-left: 130px;
+        }
+
+        .ustext p {
+            position: absolute;
+            color: rgb(192, 192, 192);
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 25px;
+
+        }
+
+        .ustext button {
+            width: 150px;
+            height: 50px;
+            background-color: rgba(0, 255, 255, 0);
+            border: 3px solid rgb(14, 160, 165);
+            color: white;
+            font-size: large;
+            margin-top: 1px;
+            transition: transform 0.3s ease 0s;
+            border-radius: 10px;
+            font-weight: bolder;
+            font-family: "Brush Script MT", cursive;
+            margin-left: 150px;
+            margin-top: 250px;
+        }
+
+        .ustext button:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(to right, #00ccff, #04b9d1, #009cda);
+            color: black;
+            box-shadow: 1px 1px 1pc 1px #00aeda;
+        }
+
+        @media screen and (max-width:500px) {
+            .nav {
+                display: flex;
+                width: 100%;
+                height: 50px;
+                font-family: "Brush Script MT", cursive;
+                padding-top: 20px;
+            }
+
+            .nav a {
+                color: white;
+                text-decoration: none;
+
+            }
+
+            .logo {
+                display: flex;
+                padding-top: 5px;
+                margin-left: -80px;
+                margin-right: 47%;
+            }
+
+            .logo i {
+                font-size: 30px;
+                padding-right: 10px;
+                padding-top: 2px;
+                padding-left: 50px;
+
+            }
+
+            .logo a {
+                color: rgb(0, 255, 128);
+            }
+
+            .logo h1 {
+                padding-right: 40px;
+                font-size: 25px;
+            }
+
+            .pages {
+                display: flex;
+                flex-direction: column;
+                float: right;
+                text-align: right;
+
+            }
+
+            .pages h1 {
+                padding-right: 20px;
+                font-size: 10px;
+                padding-top: 10px;
+            }
+
+            .head2 {
+                margin-left: 30px;
+                margin-top: 200px;
+                margin-bottom: 100px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .mine {
+                display: flex;
+            }
+
+
+            .mine h1 {
+                padding-left: 28%;
+                text-transform: uppercase;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 30px;
+            }
+
+            .minecraft {
+                width: 300px;
+                height: 400px;
+                background-color: rgb(24, 97, 75);
+                margin-top: 100px;
+                border-radius: 15px;
+                transition: transform 0.3s ease 0s;
+                position: relative;
+                margin-left: 15%;
+
+            }
+
+            .minecraft:hover {
+                transform: translateY(-30px);
+                box-shadow: 2px 2px 2pc 2px rgb(15, 160, 92);
+            }
+
+            .mi1 img {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                padding-left: 125px;
+                padding-top: 50px;
+            }
+
+            .mi2 img {
+                padding-top: 120px;
+                width: 150px;
+                height: auto;
+                padding-left: 75px;
+            }
+
+            .mitext p {
+                position: absolute;
+                color: rgb(192, 192, 192);
+                padding: 30px;
+                font-size: 10px;
+                text-align: center;
+                line-height: 15px;
+
+            }
+
+            .mitext button {
+                width: 100px;
+                height: 40px;
+                background-color: rgba(0, 255, 255, 0);
+                border: 3px solid rgb(14, 160, 165);
+                color: white;
+                font-size: large;
+                margin-top: 30px;
+                transition: transform 0.3s ease 0s;
+                border-radius: 10px;
+                font-weight: bolder;
+                font-family: "Brush Script MT", cursive;
+                margin-left: 100px;
+                margin-top: 180px;
+            }
+
+            .mitext button:hover {
+                transform: translateY(-10px);
+                background: linear-gradient(to right, #00ccff, #04b9d1, #009cda);
+                color: black;
+                box-shadow: 1px 1px 1pc 1px #00aeda;
+            }
+
+            .freefire {
+                width: 300px;
+                height: 400px;
+                background-color: rgb(97, 24, 40);
+                margin-top: 100px;
+                border-radius: 15px;
+                transition: transform 0.3s ease 0s;
+                position: relative;
+                margin-left: 15%;
+            }
+
+
+
+            .freefire:hover {
+                transform: translateY(30px);
+                box-shadow: 2px 2px 2pc 2px rgb(160, 15, 51);
+            }
+
+            .ff1 img {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                padding-left: 125px;
+                padding-top: 50px;
+            }
+
+            .ff2 img {
+                padding-top: 120px;
+                width: 150px;
+                height: auto;
+                padding-left: 75px;
+            }
+
+            .fftext p {
+                position: absolute;
+                color: rgb(192, 192, 192);
+                padding: 30px;
+                font-size: 10px;
+                text-align: center;
+                line-height: 15px;
+
+            }
+
+            .fftext button {
+                width: 100px;
+                height: 40px;
+                background-color: rgba(0, 255, 255, 0);
+                border: 3px solid rgb(14, 160, 165);
+                color: white;
+                font-size: large;
+                margin-top: 30px;
+                transition: transform 0.3s ease 0s;
+                border-radius: 10px;
+                font-weight: bolder;
+                font-family: "Brush Script MT", cursive;
+                margin-left: 100px;
+                margin-top: 180px;
+            }
+
+            .fftext button:hover {
+                transform: translateY(-10px);
+                background: linear-gradient(to right, #00ccff, #04b9d1, #009cda);
+                color: black;
+                box-shadow: 1px 1px 1pc 1px #00aeda;
+            }
+
+            .amongus {
+                width: 300px;
+                height: 400px;
+                background-color: rgb(97, 96, 24);
+                margin-top: 100px;
+                border-radius: 15px;
+                transition: transform 0.3s ease 0s;
+                position: relative;
+                margin-left: 15%;
+            }
+
+            .amongus:hover {
+                transform: translateY(-30px);
+                box-shadow: 2px 2px 2pc 2px rgb(145, 160, 15);
+            }
+
+            .us1 img {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                padding-left: 125px;
+                padding-top: 50px;
+            }
+
+            .us2 img {
+                padding-top: 120px;
+                width: 150px;
+                height: auto;
+                padding-left: 75px;
+            }
+
+            .ustext p {
+                position: absolute;
+                color: rgb(192, 192, 192);
+                padding: 30px;
+                font-size: 10px;
+                text-align: center;
+                line-height: 15px;
+
+            }
+
+            .ustext button {
+                width: 100px;
+                height: 40px;
+                background-color: rgba(0, 255, 255, 0);
+                border: 3px solid rgb(14, 160, 165);
+                color: white;
+                font-size: large;
+                margin-top: 30px;
+                transition: transform 0.3s ease 0s;
+                border-radius: 10px;
+                font-weight: bolder;
+                font-family: "Brush Script MT", cursive;
+                margin-left: 100px;
+                margin-top: 160px;
+            }
+
+            .ustext button:hover {
+                transform: translateY(-10px);
+                background: linear-gradient(to right, #00ccff, #04b9d1, #009cda);
+                color: black;
+                box-shadow: 1px 1px 1pc 1px #00aeda;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="./index.html"><i class="fa-solid fa-snowflake"></i></a>
+            <h1><a href="./index.html">RARE</a></h1>
+
+        </div>
+        <div class="pages">
+            <h1><a href="./index.html">Home</a></h1>
+            <h1><a href="#">Live</a></h1>
+            <h1><a href="./games.html">Games</a></h1>
+            <h1><a href="#">Purchase</a></h1>
+            <h1><a href="#">About Us</a></h1>
+            <h1><a href="#">Login</a></h1>
+
+        </div>
+    </div>
+    <div class="head2">
+        <div class="mine">
+            <h1>play games</h1>
+        </div>
+        <div class="minecraft">
+            <div class="mi1">
+                <img src="./580b57fcd9996e24bc43c2fa.png" alt="">
+            </div>
+            <div class="mi2">
+                <img src="./minecraft-logo.svg" alt="">
+            </div>
+            <div class="mitext">
+                <p>
+                    Minecraft is a popular sandbox game where players can build, explore, and survive in blocky,
+                    procedurally generated worlds. With both creative and survival modes, players gather resources,
+                    craft tools, and create vast structures or intricate designs. Its open-ended gameplay fosters
+                    creativity, teamwork, and endless possibilities for fun.</p>
+                <button>Play</button>
+            </div>
+
+
+
+        </div>
+        <div class="freefire">
+            <div class="ff1">
+                <img src="./fflogo.png" alt="">
+            </div>
+            <div class="ff2">
+                <img src="./ff.png" alt="">
+            </div>
+            <div class="fftext">
+                <p>
+                    Free Fire is a fast-paced battle royale game where players compete to be the last one standing
+                    on an island. With up to 50 players, they gather weapons, gear, and supplies while navigating
+                    the shrinking safe zone. Quick reflexes, strategic planning, and teamwork are key to survival
+                    and victory.</p>
+                <button>Play</button>
+            </div>
+
+
+
+        </div>
+
+        <div class="amongus">
+            <div class="us1">
+                <img src="./amonguslogo.webp" alt="">
+            </div>
+            <div class="us2">
+                <img src="./amongusssssss-removebg-preview.png" alt="">
+            </div>
+            <div class="ustext">
+                <p>
+                    Among Us is a multiplayer game where Crewmates complete tasks while Impostors sabotage them. Players
+                    must identify the Impostors through teamwork and strategy, making each round a tense and exciting
+                    battle of trust and deception.</p>
+                <button>Play</button>
+            </div>
+
+
+
+        </div>
+</body>
+
+</html>

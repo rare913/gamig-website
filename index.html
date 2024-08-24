@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 01</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(95deg, #1a1a2e, #16213e, #0f3460);
+            background-repeat: no-repeat;
+            color: white;
+            box-sizing: border-box;
+
+        }
+
+        .nav {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            font-family: "Brush Script MT", cursive;
+            padding: 40px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .logo {
+            display: flex;
+            padding-top: 5px;
+        }
+
+        .logo i {
+            font-size: 40px;
+            padding-right: 10px;
+            padding-top: 2px;
+            padding-left: 50px;
+
+        }
+
+        .logo a {
+            color: rgb(0, 255, 128);
+        }
+
+        .logo h1 {
+            padding-right: 750px;
+        }
+
+        .pages {
+            display: flex;
+        }
+
+        .pages h1 {
+            padding-right: 50px;
+            font-size: 20px;
+            padding-top: 15px;
+            transition: transform 0.3s ease 0s;
+
+        }
+
+        .pages a {
+            transition: transform 0.3s ease 0s;
+        }
+
+        .pages h1:hover {
+            color: aqua;
+            transform: translateY(-10px);
+
+        }
+
+        .pages :hover {
+            color: aqua;
+            transform: translateY(-10px);
+
+        }
+
+
+        .head {
+            position: relative;
+            margin-left: 200px;
+            margin-top: 100px;
+
+        }
+
+        .head h1 {
+            font-family: "Brush Script MT", cursive;
+            text-transform: uppercase;
+            font-size: 60px;
+            font-weight: 900;
+
+        }
+
+        .head span {
+            background: linear-gradient(to right, #00c3ff, #0e7ac2, #0a559b);
+            -webkit-background-clip: text;
+            color: transparent;
+
+        }
+
+        .head p {
+            max-width: 800px;
+            font-size: 20px;
+            line-height: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 30px;
+            color: #b3c3d8;
+        }
+
+        .btp {
+            width: 200px;
+            height: 65px;
+            background-color: rgba(0, 255, 255, 0);
+            border: 3px solid rgb(14, 165, 125);
+            color: white;
+            font-size: large;
+            margin-top: 30px;
+            transition: transform 0.3s ease 0s;
+            border-radius: 10px;
+            font-weight: bolder;
+            font-family: "Brush Script MT", cursive;
+        }
+
+        .btp:hover {
+            transform: translateY(10px) translateX(10px);
+            background: linear-gradient(to right, #00ffd5, #04d1b6, #00da5b);
+            color: black;
+            box-shadow: 1px 1px 1pc 1px #00da5b;
+
+        }
+
+        .im img {
+            width: 700px;
+            height: 700px;
+            margin-left: 960px;
+            margin-top: -550px;
+            margin-bottom: 61px;
+        }
+
+
+        @media screen and (max-width:500px) {
+
+
+            .nav {
+                display: flex;
+                width: 100%;
+                height: 50px;
+                font-family: "Brush Script MT", cursive;
+                padding-top: 20px;
+            }
+
+            .nav a {
+                color: white;
+                text-decoration: none;
+
+            }
+
+            .logo {
+                display: flex;
+                padding-top: 5px;
+                margin-left: -80px;
+                margin-right: 47%;
+            }
+
+            .logo i {
+                font-size: 30px;
+                padding-right: 10px;
+                padding-top: 2px;
+                padding-left: 50px;
+
+            }
+
+            .logo a {
+                color: rgb(0, 255, 128);
+            }
+
+            .logo h1 {
+                padding-right: 40px;
+                font-size: 25px;
+            }
+
+            .pages {
+                display: flex;
+                flex-direction: column;
+                float: right;
+                text-align: right;
+
+            }
+
+            .pages h1 {
+                padding-right: 20px;
+                font-size: 10px;
+                padding-top: 10px;
+            }
+
+            .head {
+                position: relative;
+                margin-left: 20px;
+                margin-top: 150px;
+
+            }
+
+            .head h1 {
+                font-family: "Brush Script MT", cursive;
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: 900;
+
+            }
+
+            .head span {
+                background: linear-gradient(to right, #00c3ff, #0e7ac2, #0a559b);
+                -webkit-background-clip: text;
+                color: transparent;
+
+            }
+
+            .head p {
+                max-width: 800px;
+                font-size: 18px;
+                line-height: 30px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-top: 30px;
+                color: #b3c3d8;
+                padding-right: 20px;
+            }
+
+            .btp {
+                width: 150px;
+                height: 50px;
+                background-color: rgba(0, 255, 255, 0);
+                border: 3px solid rgb(14, 165, 125);
+                color: white;
+                font-size: large;
+                margin-top: 30px;
+                transition: transform 0.3s ease 0s;
+                border-radius: 10px;
+                font-weight: bolder;
+                font-family: "Brush Script MT", cursive;
+            }
+
+            .btp:hover {
+                transform: translateY(10px) translateX(10px);
+                background: linear-gradient(to right, #00ffd5, #04d1b6, #00da5b);
+                color: black;
+                box-shadow: 1px 1px 1pc 1px #00da5b;
+
+            }
+
+            .im img {
+                width: 300px;
+                height: 300px;
+                margin-left: 60px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo">
+            <a href="./index.html"><i class="fa-solid fa-snowflake"></i></a>
+            <h1><a href="./index.html">RARE</a></h1>
+
+        </div>
+        <div class="pages">
+            <h1><a href="./index.html">Home</a></h1>
+            <h1><a href="#">Live</a></h1>
+            <h1><a href="./games.html">Games</a></h1>
+            <h1><a href="#">Purchase</a></h1>
+            <h1><a href="#">About Us</a></h1>
+            <h1><a href="#">Login</a></h1>
+
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="head">
+            <h1>the best platform <br> for <span>gaming</span> </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non voluptates alias autem ea facilis molestias
+                ad odio nesciunt tempora quidem ratione asperiores distinctio qui laboriosam blanditiis cum dolor sequi,
+                provident laborum perferendis velit repellat tempore assumenda quam. Delectus, mollitia aut corrupti
+                quisquam deleniti odit molestiae earum exercitationem Voluptates, alias in.</p>
+            <a href="./games.html"><button class="btp">Play</button></a>
+            <div class="im">
+                <img src="./—Pngtree—video game controller_4830279.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
